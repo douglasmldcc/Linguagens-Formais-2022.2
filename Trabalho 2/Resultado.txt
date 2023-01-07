@@ -1,0 +1,12 @@
+Inteiro '1' ln 0 col 1 
+Palavra Reservada 'while' ln 0 col 3 
+Identificadores 'Alo' ln 0 col 9 
+Inteiro '2' ln 1 col 1 
+Inteiro '3' ln 1 col 3 
+Identificadores 'Alo_Voce' ln 1 col 5 
+Inteiro '4' ln 2 col 1 
+Palavra Reservada 'if' ln 2 col 3 
+Palavra Reservada 'else' ln 2 col 6 
+Float '4.5' ln 3 col 1 
+Operador binario '-' ln 3 col 5 
+Float '5.78' ln 3 col 6 

@@ -30,11 +30,8 @@ associado a cada regra - posteriormente, quem vai fazer o papel de programa prin
 lexico eh o analisador sintatico. */
 
 int main() {
-
-    if ( (TOKEN) yylex() == valido ) {
-        printf("\n valido\n");
-    } else {
-        printf("\n invalido\n");
-    }
+    
+    yylex();
+    printf("\n");
     return 0;
 }
