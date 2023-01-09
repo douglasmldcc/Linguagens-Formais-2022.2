@@ -1,0 +1,21 @@
+Inteiro '1' ln 1 col 1 
+Palavra Reservada 'while' ln 1 col 3 
+Identificadores 'Alo' ln 1 col 9 
+Inteiro '2' ln 2 col 1 
+Inteiro '3' ln 2 col 3 
+Identificadores 'Alo_Voce' ln 2 col 5 
+Inteiro '4' ln 3 col 1 
+Palavra Reservada 'if' ln 3 col 3 
+Palavra Reservada 'else' ln 3 col 6 
+TERMINAL ';' ln 3 col 11 
+Comentario de linha unica '// ahwdawhawhdahdhawdhawdh 12131345658465
+' ln 4 col 1 
+Float '4.5' ln 5 col 1 
+SUB '-' ln 5 col 5 
+Float '5.78' ln 5 col 6 
+Inteiro '23' ln 5 col 11 
+ADD '+' ln 5 col 14 
+Inteiro '25' ln 5 col 16 
+Inteiro '26' ln 6 col 1 
+SUB '-' ln 6 col 4 
+Inteiro '27' ln 6 col 6 
