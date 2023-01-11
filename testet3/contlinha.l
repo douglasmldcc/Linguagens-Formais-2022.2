@@ -13,6 +13,7 @@ PReservadas "if"|"else"|"while"|"var"|"return"|"fn"|"bool"|"int"|"float"|"true"|
 Ids "_"*[a-zA-Z]*"_"*[a-zA-Z]*
 
 comentarioSL "//"(.)*
+comentarioML ([/][/][^\n]*[\n])|([/][*][^*/]*[*][/])
 
 /*Regras de Traducao*/
 /* { Regra } { Salva os dados; Anda as colunas}*/
@@ -40,7 +41,7 @@ comentarioSL "//"(.)*
 . col++;     //Conta os outros caracteres
 
 {comentarioSL} { fprintf(yyout,"Comentario de linha unica '%s' ln %d col %d \n",yytext,ln,col); col+=strlen(yytext); }
- /*{comentarioML} { fprintf(yyout,"Comentario multi linha '%s' ln %d col %d \n",yytext,ln,col); col+=strlen(yytext); }*/ 
+{comentarioML} { fprintf(yyout,"Comentario multi linha  ln %d col %d \n",ln,col); col+=strlen(yytext); } 
 %%
 
 /*Function yywrap is called by lex when input is exhausted.

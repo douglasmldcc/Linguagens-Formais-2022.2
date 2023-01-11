@@ -1,0 +1,15 @@
+IMPLICIT_TARGETS=calcula
+SORTED_DEPS=/usr/include/alloca.hcalc.tab.c/usr/bin/cclex.yy.o/usr/include/libintl.h/usr/include/limits.h/usr/include/malloc.h/usr/include/stdint.h/usr/include/stdio.h/usr/include/stdlib.h
+BUILD_SIGNATURE=1673444787,48232
+COMMAND=cc -g -o calcula calc.tab.c lex.yy.o
+META_DEPS=/usr/bin/cccalc.tab.csysalloca.hlibintl.hlimits.hmalloc.hstddef.hstdint.hstdio.hstdlib.h
+SIGNATURE=1673444787,48232
+INCLUDE_PATHS=lib/usr/local/lib/usr/lib/libsys/usr/local/include/usr/includeuser/usr/local/include/usr/include
+INCLUDE_SFXS=lib.la.so.sa.a.sl
+CWD=.
+IMPLICIT_DEPS=lex.yy.o
+ARCH=x86_64-linux-gnu-thread-multi
+SIG_METHOD_NAME=C
+SIG_METHOD_IMPLICIT=1
+DEP_SIGS=1649294681,12040RSg0uee5Y5Ha3JF/SDNdw1646848644,11582881673444787,433761649294681,45801649294681,54171649294681,61861649294681,84741649294681,299501649294681,35835
+END=

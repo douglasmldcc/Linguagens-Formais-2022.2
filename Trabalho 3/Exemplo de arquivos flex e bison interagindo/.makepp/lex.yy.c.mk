@@ -1,0 +1,17 @@
+SYSTEM_INCLUDES=errno.h inttypes.h stdio.h stdlib.h string.h unistd.h
+C_MD5_SUM=xN1DhhrVzfv+gwet4kaMmQ
+IMPLICIT_TARGETS=
+SORTED_DEPS=calc.lcalc.tab.h/usr/bin/flex
+INCLUDES=calc.tab.h
+BUILD_SIGNATURE=1673444787,45114
+COMMAND=flex calc.l
+META_DEPS=/usr/bin/flex
+INCLUDE_SFXS=
+SIGNATURE=1673444787,45114
+INCLUDE_PATHS=
+IMPLICIT_DEPS=
+ARCH=x86_64-linux-gnu-thread-multi
+LIBS=
+CWD=.
+DEP_SIGS=1673271674,3911673444786,22881533584425,443056
+END=

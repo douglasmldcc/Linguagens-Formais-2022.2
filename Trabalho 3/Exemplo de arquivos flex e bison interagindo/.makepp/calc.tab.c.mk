@@ -1,0 +1,17 @@
+IMPLICIT_DEPS=
+ARCH=x86_64-linux-gnu-thread-multi
+LIBS=
+CWD=.
+INCLUDE_SFXS=
+SIGNATURE=1673444786,48118
+INCLUDE_PATHS=
+DEP_SIGS=1579674331,4431201673444709,599
+C_MD5_SUM=0RSg0uee5Y5Ha3JF/SDNdw
+IMPLICIT_TARGETS=
+SORTED_DEPS=/usr/bin/bisoncalc.y
+INCLUDES=
+SYSTEM_INCLUDES=alloca.h libintl.h limits.h malloc.h stddef.h stdint.h stdio.h stdlib.h
+META_DEPS=/usr/bin/bison
+BUILD_SIGNATURE=1673444786,48118
+COMMAND=bison -d calc.y
+END=

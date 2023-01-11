@@ -1,0 +1,125 @@
+3/usr/bin/makepp
+VERSION2.0.98.55.30.0x86_64-linux-gnu-thread-multi
+DEBUG0
+LOAD557ee6d06048makefile557ee649b9a0/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo557ee649b9a0
+TRY557ee6d06048
+USEdefault rule
+DEPEND557ee6d06048
+UP_TO_DATE557ee6d06048
+LOAD_INCL557ee6270910makepp_builtin_rules.mk557ee6c7d048/usr/share/makepp557ee6d06048
+LOAD_END557ee6d06048
+TRY557ee6270b20calcula557ee649b9a0
+USE/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:1
+SCAN_INFO557ee6270b20
+LEX_RULE557ee6270b20info not cached
+PARSEcc -g -o calcula calc.tab.c lex.yy.o557ee649b9a0/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:1
+TRY557ee6d8ea40cc557ee6d8e968/usr/bin
+USEdefault rule
+DEPEND557ee6d8ea40
+UP_TO_DATE557ee6d8ea40
+TRY557ee6270fa0calc.tab.c557ee649b9a0
+USE/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:10
+SCAN_INFO557ee6270fa0
+LEX_RULE557ee6270fa0info not cached
+PARSEbison -d calc.y557ee649b9a0/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:10
+TRY557ee6d96b20bison557ee6d8e968
+USEdefault rule
+DEPEND557ee6d96b20
+UP_TO_DATE557ee6d96b20
+DEPEND557ee6270f10calc.tab.h557ee649b9a0557ee6270fa0557ee6d96b20557ee6d31cb0calc.y557ee649b9a0
+TRY557ee6d31cb0
+USEdefault rule
+DEPEND557ee6d31cb0
+UP_TO_DATE557ee6d31cb0
+BUILD_NONE557ee6270f10
+SUCCESS/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:10557ee6270f10557ee6270fa0
+INCL557ee6270fa0557ee6d8bf40stdio.h557ee6db7ef0/usr/include
+TRY557ee6d8bf40
+USEdefault rule
+DEPEND557ee6d8bf40
+UP_TO_DATE557ee6d8bf40
+INCL557ee6270fa0557ee6dccda0limits.h557ee6db7ef0
+TRY557ee6dccda0
+USEdefault rule
+DEPEND557ee6dccda0
+UP_TO_DATE557ee6dccda0
+INCL557ee6270fa0557ee624fbc8stdint.h557ee6db7ef0
+TRY557ee624fbc8
+USEdefault rule
+DEPEND557ee624fbc8
+UP_TO_DATE557ee624fbc8
+INCL557ee6270fa0557ee6250048libintl.h557ee6db7ef0
+TRY557ee6250048
+USEdefault rule
+DEPEND557ee6250048
+UP_TO_DATE557ee6250048
+INCL557ee6270fa0557ee6dd8158alloca.h557ee6db7ef0
+TRY557ee6dd8158
+USEdefault rule
+DEPEND557ee6dd8158
+UP_TO_DATE557ee6dd8158
+INCL557ee6270fa0557ee624ce90malloc.h557ee6db7ef0
+TRY557ee624ce90
+USEdefault rule
+DEPEND557ee624ce90
+UP_TO_DATE557ee624ce90
+INCL557ee6270fa0557ee6dc9898stdlib.h557ee6db7ef0
+TRY557ee6dc9898
+USEdefault rule
+DEPEND557ee6dc9898
+UP_TO_DATE557ee6dc9898
+INCL557ee6270fa0557ee6dc9898
+INCL557ee6270fa0557ee6d8bf40
+DEPEND557ee6270b20557ee6dd8158557ee6270fa0557ee6d8ea40557ee6270ca0lex.yy.o557ee649b9a0557ee6250048557ee6dccda0557ee624ce90557ee624fbc8557ee6d8bf40557ee6dc9898
+TRY557ee6270ca0
+USE/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:4
+SCAN_INFO557ee6270ca0
+LEX_RULE557ee6270ca0info not cached
+PARSEcc -g -c lex.yy.c557ee649b9a0/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:4
+TRY557ee6270dd8lex.yy.c557ee649b9a0
+USE/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:7
+SCAN_INFO557ee6270dd8
+LEX_RULE557ee6270dd8info not cached
+PARSEflex calc.l557ee649b9a0/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:7
+TRY557ee6dc20f0flex557ee6d8e968
+USEdefault rule
+DEPEND557ee6dc20f0
+UP_TO_DATE557ee6dc20f0
+DEPEND557ee6270dd8557ee6d31c20calc.l557ee649b9a0557ee6270f10557ee6dc20f0
+TRY557ee6d31c20
+USEdefault rule
+DEPEND557ee6d31c20
+UP_TO_DATE557ee6d31c20
+BUILD_INVALID557ee6270dd8
+SUCCESS/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:7557ee6270dd8
+INCL557ee6270dd8557ee6d8bf40
+INCL557ee6270dd8557ee6dcd6a0string.h557ee6db7ef0
+TRY557ee6dcd6a0
+USEdefault rule
+DEPEND557ee6dcd6a0
+UP_TO_DATE557ee6dcd6a0
+INCL557ee6270dd8557ee624c740errno.h557ee6db7ef0
+TRY557ee624c740
+USEdefault rule
+DEPEND557ee624c740
+UP_TO_DATE557ee624c740
+INCL557ee6270dd8557ee6dc9898
+INCL557ee6270dd8557ee6dea828inttypes.h557ee6db7ef0
+TRY557ee6dea828
+USEdefault rule
+DEPEND557ee6dea828
+UP_TO_DATE557ee6dea828
+INCL557ee6270dd8557ee6d8bf40
+INCL557ee6270dd8557ee6dc9898
+INCL557ee6270dd8557ee6270f10
+INCL557ee6270dd8557ee6dc9c88unistd.h557ee6db7ef0
+TRY557ee6dc9c88
+USEdefault rule
+DEPEND557ee6dc9c88
+UP_TO_DATE557ee6dc9c88
+DEPEND557ee6270ca0557ee6270f10557ee6d8ea40557ee624c740557ee6dea828557ee6270dd8557ee6d8bf40557ee6dc9898557ee6dcd6a0557ee6dc9c88
+BUILD_NONE557ee6270ca0
+SUCCESS/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:4557ee6270ca0
+BUILD_NONE557ee6270b20
+SUCCESS/mnt/c/users/loc 21/documents/github/linguagens-formais-2022.2/trabalho 3/exemplo de arquivos flex e bison interagindo/makefile:1557ee6270b20
+N_FILES500
