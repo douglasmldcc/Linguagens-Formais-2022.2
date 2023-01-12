@@ -1,0 +1,137 @@
+    INT--> tipo
+   FLOAT--> tipo
+ IDS tipo--> lista
+IDS tipo , lista--> lista
+  INT--> tipo
+    L_INT --> value
+value --> term
+term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+cmd cmd_2--> def
+ FN IDS (lista) : tipo  {def} TERMINAL --> decl_fun
+program decl_fun--> program
+
+   INT--> tipo
+  L_INT --> value
+value --> term
+ term --> factor
+factor --> exp
+VAR IDS DSPTS tipo EQ exp TERMINAL--> decl_var
+program decl_var--> program
+
+Comentario
+
+    INT--> tipo
+ IDS tipo--> lista
+  INT--> tipo
+    L_INT --> value
+value --> term
+term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+cmd cmd_2--> def
+ FN IDS (lista) : tipo  {def} TERMINAL --> decl_fun
+program decl_fun--> program
+
+   INT--> tipo
+ VAR IDS DSPTS tipo TERMINAL--> decl_var
+program decl_var--> program
+
+   vazio--> lista
+  INT--> tipo
+    L_INT --> value
+value --> term
+term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+cmd cmd_2--> def
+ FN IDS (lista) : tipo  {def} TERMINAL --> decl_fun
+program decl_fun--> program
+
+    INT--> tipo
+   FLOAT--> tipo
+ IDS tipo--> lista
+IDS tipo , lista--> lista
+  INT--> tipo
+  TRUE --> value
+value --> term
+term --> factor
+factor --> exp
+exp --> cond
+   L_INT --> value
+value --> term
+ term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+ WHILE (cond) {cmd cmd_2} TERMINAL--> cmd
+ vazio --> cmd_2
+cmd cmd_2--> def
+ FN IDS (lista) : tipo  {def} TERMINAL --> decl_fun
+program decl_fun--> program
+
+Comentario
+
+    INT--> tipo
+   FLOAT--> tipo
+ IDS tipo--> lista
+IDS tipo , lista--> lista
+  INT--> tipo
+  TRUE --> value
+value --> term
+term --> factor
+factor --> exp
+exp --> cond
+   L_INT --> value
+value --> term
+ term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+    L_INT --> value
+value --> term
+ term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+ IF (cond) {cmd cmd_2} ELSE {cmd cmd_2} TERMINAL--> cmd
+ vazio --> cmd_2
+cmd cmd_2--> def
+ FN IDS (lista) : tipo  {def} TERMINAL --> decl_fun
+program decl_fun--> program
+
+Comentario
+
+    INT--> tipo
+   FLOAT--> tipo
+ IDS tipo--> lista
+IDS tipo , lista--> lista
+  INT--> tipo
+  TRUE --> value
+value --> term
+term --> factor
+factor --> exp
+exp --> cond
+   L_INT --> value
+value --> term
+ term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+    L_INT --> value
+value --> term
+ term --> factor
+factor --> exp
+IDS = exp TERMINAL --> cmd
+ vazio --> cmd_2
+ IF (cond) {cmd cmd_2} ELSE {cmd cmd_2} TERMINAL--> cmd
+ vazio --> cmd_2
+cmd cmd_2--> def
+ FN IDS (lista) : tipo  {def} TERMINAL --> decl_fun
+program decl_fun--> program
+
+

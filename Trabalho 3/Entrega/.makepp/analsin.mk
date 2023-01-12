@@ -1,0 +1,15 @@
+COMMAND=cc -g -o analsin analsin.tab.c lex.yy.o
+SIGNATURE=1673491848,54304
+BUILD_SIGNATURE=1673491848,54304
+IMPLICIT_TARGETS=analsin
+INCLUDE_SFXS=lib.la.so.sa.a.sl
+INCLUDE_PATHS=lib/usr/local/lib/usr/lib/libsys/usr/local/include/usr/includeuser/usr/local/include/usr/include
+SORTED_DEPS=/usr/include/alloca.hanalsin.tab.canalsin.tab.h/usr/bin/cclex.yy.o/usr/include/libintl.h/usr/include/limits.h/usr/include/malloc.h/usr/include/math.h/usr/include/stdint.h/usr/include/stdio.h/usr/include/stdlib.h
+DEP_SIGS=1657149803,1203oSkwWC1Lu7+1si/G4MdQMgyte1ZARWwreyVFSwR2QlyA1651350594,8629761673491847,470481657149803,45801657149803,57061657149803,59841657149803,498641657149803,84741657149803,311761657149803,36393
+IMPLICIT_DEPS=lex.yy.o
+ARCH=x86_64-linux-gnu-thread-multi
+CWD=.
+SIG_METHOD_NAME=C
+SIG_METHOD_IMPLICIT=1
+META_DEPS=/usr/bin/ccanalsin.tab.csysalloca.hlibintl.hlimits.hmalloc.hmath.hstddef.hstdint.hstdio.hstdlib.huser./analsin.tab.h
+END=
