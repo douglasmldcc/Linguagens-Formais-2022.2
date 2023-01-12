@@ -1,8 +1,0 @@
-fn testando ( oi int,  ola float ) : int { bom_dia = 17; } ;
-// comentario
-var oi : int = 32 ;
-
-fn testando ( oi int ) : int { bom_dia = 17; } ;
-
-var oi : int ;
-fn testando ( ) : int { bom_dia = 17; } ;
