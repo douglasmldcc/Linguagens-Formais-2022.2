@@ -11,14 +11,16 @@ var oi : int ;
 
 fn testando ( ) : int { bom_dia = 17; } ;
 
-
+var oi : int = 32 * 9  ;
 
 fn testando ( oi int,  ola float ) : int { while(true) {bom_dia = 17 ; } ; } ;
+
 /* comentarioM
-comentarioM
+comentarioMcar
 */
 
 fn testando ( oi int,  ola float ) : int { if(true) {bom_dia = 17 ; } else {bom_dia = 17 ; } ; } ;
+
 /* comentarioM
 comentarioM
 */

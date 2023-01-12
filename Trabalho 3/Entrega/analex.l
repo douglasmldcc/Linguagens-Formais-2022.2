@@ -1,3 +1,8 @@
+ /*Nome dos alunos / DRE:  Douglas de Morais                     117227656
+                          Gabriel Menezes San Segundo Rebello;  120018731
+                          
+                          */
+
 %option noyywrap
 
 %{

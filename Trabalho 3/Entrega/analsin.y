@@ -25,7 +25,7 @@ extern FILE *yyout;
 %token TERMINAL COMMT
 
  /* Operadores */
-%token ADD SUB MUL DIV ABS EQEQ DIFF
+%token ADD SUB MUL DIV EQEQ DIFF
 
 %token EOL 
 
@@ -75,7 +75,7 @@ decl_fun: FN IDS ABPARANT lista FCPARANT DSPTS tipo ABCOLCH def FCCOLCH TERMINAL
 
 lista: {printf("vazio--> lista\n"); fprintf(yyout,"vazio--> lista\n");}
  | IDS tipo {printf("IDS tipo--> lista\n"); fprintf(yyout,"IDS tipo--> lista\n");}
- | IDS tipo VIRG lista {printf("IDS tipo , lista--> lista\n"); fprintf(yyout,"IDS tipo , lista--> lista\n");} /* Isso permitiria (IDS tipo,) dá para garantir que isso não possa ocorrer mas ia ser bem mas complicado então não botei no rascunho */
+ | IDS tipo VIRG lista {printf("IDS tipo , lista--> lista\n"); fprintf(yyout,"IDS tipo , lista--> lista\n");} 
  ;
 
 def:
@@ -87,7 +87,7 @@ cmd_2:/* epsilon */  {printf("vazio --> cmd_2\n"); fprintf(yyout,"vazio --> cmd_
  | cmd cmd_2 {printf("cmd cmd_2--> cmd_2\n"); fprintf(yyout,"cmd cmd_2--> cmd_2\n");}
  ;
 
-cmd: IDS EQ exp TERMINAL {printf("IDS = exp TERMINAL --> cmd\n"); fprintf(yyout,"IDS = exp TERMINAL --> cmd\n");}/* eu não tenho certeza se identificador seria o correto aqui, mas acho que é isso mesmo e o analizador semântico que é responsável por conectar o id cmd os dados da variável*/
+cmd: IDS EQ exp TERMINAL {printf("IDS = exp TERMINAL --> cmd\n"); fprintf(yyout,"IDS = exp TERMINAL --> cmd\n");}
  | IF ABPARANT cond FCPARANT ABCOLCH cmd cmd_2 FCCOLCH TERMINAL  {printf("IF (cond) {cmd cmd_2} TERMINAL--> cmd\n"); fprintf(yyout,"IF (cond) {cmd cmd_2} TERMINAL--> cmd\n");}
  | IF ABPARANT cond FCPARANT ABCOLCH cmd cmd_2 FCCOLCH ELSE ABCOLCH cmd cmd_2 FCCOLCH TERMINAL  {printf("IF (cond) {cmd cmd_2} ELSE {cmd cmd_2} TERMINAL--> cmd\n"); fprintf(yyout,"IF (cond) {cmd cmd_2} ELSE {cmd cmd_2} TERMINAL--> cmd\n");}
  | WHILE ABPARANT cond FCPARANT ABCOLCH cmd cmd_2 FCCOLCH TERMINAL {printf("WHILE (cond) {cmd cmd_2} TERMINAL--> cmd\n"); fprintf(yyout,"WHILE (cond) {cmd cmd_2} TERMINAL--> cmd\n");}
@@ -109,20 +109,20 @@ int main(int argc, char **argv) {
         file = fopen(argv[1], "r");
         file2 = fopen(argv[2], "w");
         if (!file) {
-            fprintf(stderr, "Could not open file %s\n", argv[1]);
+            fprintf(stderr, "Nao foi possivel abrir o arquivo de entrada %s\n", argv[1]);
             return 1;
         }
         if (!file2) {
-            fprintf(stderr, "Could not open file 2 %s\n", argv[1]);
+            fprintf(stderr, "Nao foi possivel abrir o arquivo de saida %s\n", argv[1]);
             return 1;
         }
         yyin = file;
         yyout = file2;
     } else if (argc == 2){
-        fprintf(stderr, "Usage: %s output_file\n", argv[0]);
+        fprintf(stderr, "%s falta arquivo de saida\n", argv[0]);
         return 1;
     } else {
-        fprintf(stderr, "Usage: %s input_file\n", argv[0]);
+        fprintf(stderr, "%s falta arquivo de entrada e saida\n", argv[0]);
         return 1;
     }
     yyparse();
