@@ -1,0 +1,17 @@
+INCLUDE_SFXS=
+CWD=.
+IMPLICIT_DEPS=
+COMMAND=bison -d analsin.y
+INCLUDES=analsin.tab.h
+SORTED_DEPS=analsin.y/usr/bin/bison
+DEP_SIGS=1673487517,32741648028628,504624
+C_MD5_SUM=LLTQhDULqQgoIvyXXVYxoA
+META_DEPS=/usr/bin/bison
+SYSTEM_INCLUDES=alloca.h libintl.h limits.h malloc.h stddef.h stdint.h stdio.h stdlib.h
+ARCH=x86_64-linux-gnu-thread-multi
+BUILD_SIGNATURE=1673487522,51834
+SIGNATURE=1673487522,51834
+LIBS=
+INCLUDE_PATHS=
+IMPLICIT_TARGETS=
+END=

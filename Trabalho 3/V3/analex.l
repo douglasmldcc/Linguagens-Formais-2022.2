@@ -1,3 +1,6 @@
+/*Nome dos alunos: Gabriel Menezes San Segundo Rebello; */
+/*DREs: 120018731; */
+
 %option noyywrap
 
 %{
@@ -5,14 +8,12 @@
 #include <stdlib.h>
 #include "analsin.tab.h"
 
-
-
 %}
 
 Lint [0-9]+
 Lfloat [0-9]*\.[0-9]+ 
 Ids [a-zA-Z_][a-zA-Z0-9_]*
-Comentarios [/][/](.)*|("/*"[^*/]*[\n]*[\n]*"*/")
+Comentarios "//"(.)*|("/*"[^*/]*[\n]*[\n]*"*/")
 
 /*Regras de Traducao*/
 /* { Regra } { Salva os dados; Anda as colunas}*/
@@ -55,9 +56,9 @@ Comentarios [/][/](.)*|("/*"[^*/]*[\n]*[\n]*"*/")
  /*Simbolo terminal */
 
 ";"         { return TERMINAL; }
-\n          { return EOL; }
+
 {Comentarios}    { return COMMT; }
 
+\n     { return EOL; }
 
-<<EOF>>         { return EOF; }
 %%

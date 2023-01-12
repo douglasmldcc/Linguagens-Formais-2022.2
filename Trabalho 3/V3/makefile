@@ -1,5 +1,5 @@
-analsin: lex.yy.o
-	cc -g -o analsin analsin.tab.c lex.yy.o
+analise: lex.yy.o
+	cc -g -o analise analsin.tab.c lex.yy.o
 
 lex.yy.o: lex.yy.c analsin.tab.h
 	cc -g -c lex.yy.c

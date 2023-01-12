@@ -1,0 +1,42 @@
+    INT--> tipo
+   FLOAT--> tipo
+   INT--> tipo
+      program decl_fun--> program
+
+   INT--> tipo
+   VAR IDS DSPTS tipo EQ exp TERMINAL--> decl_var
+program decl_var--> program
+
+Comentario
+
+    INT--> tipo
+   INT--> tipo
+      program decl_fun--> program
+
+   INT--> tipo
+ VAR IDS DSPTS tipo TERMINAL--> decl_var
+program decl_var--> program
+
+     INT--> tipo
+      program decl_fun--> program
+
+    INT--> tipo
+   FLOAT--> tipo
+   INT--> tipo
+          program decl_fun--> program
+
+Comentario
+
+    INT--> tipo
+   FLOAT--> tipo
+   INT--> tipo
+                program decl_fun--> program
+
+Comentario
+
+    INT--> tipo
+   FLOAT--> tipo
+   INT--> tipo
+                program decl_fun--> program
+
+

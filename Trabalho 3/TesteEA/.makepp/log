@@ -1,0 +1,145 @@
+3/usr/bin/makepp
+VERSION2.0.98.55.34.0x86_64-linux-gnu-thread-multi
+DEBUG0
+LOAD55d8a126ef98makefile55d8a0a925d0/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea55d8a0a925d0
+TRY55d8a126ef98
+USEdefault rule
+DEPEND55d8a126ef98
+UP_TO_DATE55d8a126ef98
+LOAD_INCL55d8a0877d48makepp_builtin_rules.mk55d8a11f0da8/usr/share/makepp55d8a126ef98
+LOAD_END55d8a126ef98
+TRY55d8a0877f58analsin55d8a0a925d0
+USE/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:1
+SCAN_INFO55d8a0877f58
+CACHED_DEP55d8a12d4640cc55d8a12da2a0/usr/bin55d8a0877f58
+TRY55d8a12d4640
+USEdefault rule
+DEPEND55d8a12d4640
+UP_TO_DATE55d8a12d4640
+CACHED_DEP55d8a08783d8analsin.tab.c55d8a0a925d055d8a0877f58
+TRY55d8a08783d8
+USE/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:10
+SCAN_INFO55d8a08783d8
+CACHED_DEP55d8a12ca340bison55d8a12da2a055d8a08783d8
+TRY55d8a12ca340
+USEdefault rule
+DEPEND55d8a12ca340
+UP_TO_DATE55d8a12ca340
+BUILD_CHANGED55d8a08783d855d8a1292118analsin.y55d8a0a925d0
+SCAN_CACHED55d8a08783d8
+DEPEND55d8a0878348analsin.tab.h55d8a0a925d055d8a08783d855d8a129211855d8a12ca340
+TRY55d8a1292118
+USEdefault rule
+DEPEND55d8a1292118
+UP_TO_DATE55d8a1292118
+BUILD_CHANGED55d8a087834855d8a1292118
+SUCCESS/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:1055d8a087834855d8a08783d8
+CACHED_DEP55d8a12bbaf0alloca.h55d8a12d9df0/usr/include55d8a0877f58
+TRY55d8a12bbaf0
+USEdefault rule
+DEPEND55d8a12bbaf0
+UP_TO_DATE55d8a12bbaf0
+CACHED_DEP55d8a0854e68libintl.h55d8a12d9df055d8a0877f58
+TRY55d8a0854e68
+USEdefault rule
+DEPEND55d8a0854e68
+UP_TO_DATE55d8a0854e68
+CACHED_DEP55d8a12ef620limits.h55d8a12d9df055d8a0877f58
+TRY55d8a12ef620
+USEdefault rule
+DEPEND55d8a12ef620
+UP_TO_DATE55d8a12ef620
+CACHED_DEP55d8a12ef350malloc.h55d8a12d9df055d8a0877f58
+TRY55d8a12ef350
+USEdefault rule
+DEPEND55d8a12ef350
+UP_TO_DATE55d8a12ef350
+CACHED_DEP55d8a12b5758math.h55d8a12d9df055d8a0877f58
+TRY55d8a12b5758
+USEdefault rule
+DEPEND55d8a12b5758
+UP_TO_DATE55d8a12b5758
+CACHED_DEP55d8a0854448stdint.h55d8a12d9df055d8a0877f58
+TRY55d8a0854448
+USEdefault rule
+DEPEND55d8a0854448
+UP_TO_DATE55d8a0854448
+CACHED_DEP55d8a12ee780stdio.h55d8a12d9df055d8a0877f58
+TRY55d8a12ee780
+USEdefault rule
+DEPEND55d8a12ee780
+UP_TO_DATE55d8a12ee780
+CACHED_DEP55d8a12b5488stdlib.h55d8a12d9df055d8a0877f58
+TRY55d8a12b5488
+USEdefault rule
+DEPEND55d8a12b5488
+UP_TO_DATE55d8a12b5488
+CACHED_DEP55d8a087834855d8a0877f58
+CACHED_DEP55d8a08780d8lex.yy.o55d8a0a925d055d8a0877f58
+BUILD_CHANGED55d8a0877f5855d8a08783d8
+LEX_RULE55d8a0877f58meta dependencies are out of date
+PARSEcc -g -o analsin analsin.tab.c lex.yy.o55d8a0a925d0/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:1
+INCL55d8a08783d855d8a12ee780
+INCL55d8a08783d855d8a12b5488
+INCL55d8a08783d855d8a12b5758
+INCL55d8a08783d855d8a0878348
+INCL55d8a08783d855d8a12ef620
+INCL55d8a08783d855d8a0854448
+INCL55d8a08783d855d8a0854e68
+INCL55d8a08783d855d8a12bbaf0
+INCL55d8a08783d855d8a12ef350
+INCL55d8a08783d855d8a12b5488
+INCL55d8a08783d855d8a12b5488
+INCL55d8a08783d855d8a12ee780
+DEPEND55d8a0877f5855d8a12bbaf055d8a08783d855d8a087834855d8a12d464055d8a08780d855d8a0854e6855d8a12ef62055d8a12ef35055d8a12b575855d8a085444855d8a12ee78055d8a12b5488
+TRY55d8a08780d8
+USE/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:4
+SCAN_INFO55d8a08780d8
+CACHED_DEP55d8a12d464055d8a08780d8
+CACHED_DEP55d8a0878210lex.yy.c55d8a0a925d055d8a08780d8
+TRY55d8a0878210
+USE/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:7
+SCAN_INFO55d8a0878210
+CACHED_DEP55d8a135a060flex55d8a12da2a055d8a0878210
+TRY55d8a135a060
+USEdefault rule
+DEPEND55d8a135a060
+UP_TO_DATE55d8a135a060
+BUILD_CHANGED55d8a087821055d8a0878348
+SCAN_CACHED55d8a0878210
+DEPEND55d8a087821055d8a1291ff8analex.l55d8a0a925d055d8a087834855d8a135a060
+TRY55d8a1291ff8
+USEdefault rule
+DEPEND55d8a1291ff8
+UP_TO_DATE55d8a1291ff8
+BUILD_CHANGED55d8a087821055d8a0878348
+SUCCESS/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:755d8a0878210
+CACHED_DEP55d8a12f1a28errno.h55d8a12d9df055d8a08780d8
+TRY55d8a12f1a28
+USEdefault rule
+DEPEND55d8a12f1a28
+UP_TO_DATE55d8a12f1a28
+CACHED_DEP55d8a0854b98inttypes.h55d8a12d9df055d8a08780d8
+TRY55d8a0854b98
+USEdefault rule
+DEPEND55d8a0854b98
+UP_TO_DATE55d8a0854b98
+CACHED_DEP55d8a12ee78055d8a08780d8
+CACHED_DEP55d8a12b548855d8a08780d8
+CACHED_DEP55d8a12eec90string.h55d8a12d9df055d8a08780d8
+TRY55d8a12eec90
+USEdefault rule
+DEPEND55d8a12eec90
+UP_TO_DATE55d8a12eec90
+CACHED_DEP55d8a12b5f38unistd.h55d8a12d9df055d8a08780d8
+TRY55d8a12b5f38
+USEdefault rule
+DEPEND55d8a12b5f38
+UP_TO_DATE55d8a12b5f38
+CACHED_DEP55d8a087834855d8a08780d8
+SCAN_CACHED55d8a08780d8
+DEPEND55d8a08780d855d8a087834855d8a12d464055d8a12f1a2855d8a0854b9855d8a087821055d8a12ee78055d8a12b548855d8a12eec9055d8a12b5f38
+UP_TO_DATE55d8a08780d8
+BUILD_CHANGED55d8a0877f5855d8a08783d8
+SUCCESS/mnt/c/users/dougl/documents/github/linguagens-formais-2022.2/trabalho 3/testeea/makefile:155d8a0877f58
+N_FILES400

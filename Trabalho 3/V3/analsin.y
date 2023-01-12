@@ -1,3 +1,6 @@
+/*Nome dos alunos: Gabriel Menezes San Segundo Rebello; */
+/*DREs: 120018731; */
+
 %{
 #include <stdio.h>
 %}
@@ -14,18 +17,18 @@
 %token TERMINAL COMMT
 
  /* Operadores */
-%token ADD SUB MUL DIV ABS EQEQ DIFF
+%token ADD SUB MUL DIV EQEQ DIFF
 
 %token EOL
 
 
 %%
 
-program:
+program:   {printf("Cabo\n");}
  | program decl_var EOL {printf("program decl_var--> program\n");}
  | program decl_fun EOL {printf("program decl_fun--> program\n");}
  | program EOL 
- | COMMT EOL            {printf("Comentario de linha unica\n");}
+ | COMMT EOL            {printf("Comentario\n");}
  ;
 
 decl_var: VAR IDS DSPTS tipo TERMINAL {printf("VAR IDS DSPTS tipo TERMINAL--> decl_var\n");}
@@ -37,10 +40,25 @@ tipo: INT {printf("INT--> tipo\n");}
  | BOOL {printf("BOOL--> tipo\n");} 
  ;
 
-exp: L_FLOAT {printf("L_FLOAT --> exp\n");}/* só botei o básico podemos botar suporte para operações depois*/
- | L_INT {printf("L_INT --> exp\n");}/* nós precisamos fazer que o analizador léxico saiba que se for int tem que ser L_INT ou isso é só trabalho para o analizador semântico? Eu acho que lembro dela falando que isso é só o semântico que detecta mas posso estar lembrando errado*/
- | TRUE {printf("TRUE --> exp\n");}
- | FALSE {printf("FALSE --> exp\n");}
+exp: factor {printf("factor --> exp\n");}
+ | exp ADD factor {printf("exp ADD factor --> exp\n");}
+ | exp SUB factor {printf("exp SUB factor --> exp\n");}
+ ;
+
+factor: term {printf("term --> factor\n");}
+ | factor MUL term {printf("factor MUL term --> factor\n");}
+ | factor DIV term {printf("factor DIV term --> factor\n");}
+ ;
+
+term: value {printf("value --> term\n");}
+ | term EQEQ value {printf("term EQEQ value --> term\n");}
+ | term DIFF value {printf("term DIFF value --> term\n");}
+ ;
+
+value: L_FLOAT {printf("L_FLOAT --> value\n");}
+ | L_INT {printf("L_INT --> value\n");}
+ | TRUE {printf("TRUE --> value\n");}
+ | FALSE {printf("FALSE --> value\n");}
  ;
 
 decl_fun: FN IDS ABPARANT Lista FCPARANT DSPTS tipo ABCOLCH def FCCOLCH TERMINAL {printf("FN IDS (Lista) : tipo  {def} TERMINAL --> decl_fun\n");}
@@ -60,14 +78,15 @@ cmd_2:/* epsilon */  {printf("vazio --> cmd_2\n");}
  ;
 
 cmd: IDS EQ exp TERMINAL {printf("IDS = exp TERMINAL --> cmd\n");}/* eu não tenho certeza se identificador seria o correto aqui, mas acho que é isso mesmo e o analizador semântico que é responsável por conectar o id cmd os dados da variável*/
- | IF ABPARANT COND FCPARANT ABCOLCH cmd cmd_2 FCCOLCH TERMINAL  {printf("IF (COND) {cmd cmd_2} TERMINAL--> cmd\n");}
- | IF ABPARANT COND FCPARANT ABCOLCH cmd cmd_2 FCCOLCH ELSE ABCOLCH cmd cmd_2 FCCOLCH TERMINAL  {printf("IF (COND) {cmd cmd_2} ELSE {cmd cmd_2} TERMINAL--> cmd\n");}
- | WHILE ABPARANT COND FCPARANT ABCOLCH cmd cmd_2 FCCOLCH TERMINAL {printf("WHILE (COND) {cmd cmd_2} TERMINAL--> cmd\n");}
+ | IF ABPARANT cond FCPARANT ABCOLCH def FCCOLCH TERMINAL  {printf("IF (cond) {cmd cmd_2} TERMINAL--> cmd\n");}
+ | IF ABPARANT cond FCPARANT ABCOLCH def FCCOLCH ELSE ABCOLCH def FCCOLCH TERMINAL  {printf("IF (cond) {cmd cmd_2} ELSE {cmd cmd_2} TERMINAL--> cmd\n");}
+ | WHILE ABPARANT cond FCPARANT ABCOLCH def FCCOLCH TERMINAL {printf("WHILE (cond) {cmd cmd_2} TERMINAL--> cmd\n");}
  | RETURN exp TERMINAL {printf("RETURN exp TERMINAL--> cmd\n");}
  ;
 
-COND: TRUE {printf("TRUE--> COND\n");}
- | FALSE {printf("FALSE--> COND\n");}
+cond: TRUE {printf("TRUE--> cond\n");}
+ | FALSE {printf("FALSE--> cond\n");}
+ | exp {printf("exp --> cond\n");}
  ;
 
 %%

@@ -4,7 +4,7 @@
 %}
 
 /* declare tokens */
-%token NUMBER
+%token IDS L_INT L_FLOAT
 %token ADD SUB MUL DIV ABS
 %token EOL
 
